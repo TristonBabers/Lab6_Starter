@@ -24,12 +24,8 @@ function getRecipesFromStorage() {
   // A9. TODO - Complete the functionality as described in this function
   //           header. It is possible in only a single line, but should
   //           be no more than a few lines.
-
   const recipesFromStore = window.localStorage.getItem('recipes');
   
-  
-  
-
   return JSON.parse(recipesFromStore);
 }
 
@@ -79,6 +75,11 @@ function initFormHandler() {
   
   // B3. TODO - Add an event listener for the 'submit' event, which fires when the
   //            submit button is clicked
+  const submitBtn = document.querySelector('button');
+
+  submitBtn.addEventListener('click', function (e) {
+    console.log("it works!" + e);
+  });
 
   // Steps B4-B9 will occur inside the event listener from step B3
   // B4. TODO - Create a new FormData object from the <form> element reference above
@@ -92,6 +93,8 @@ function initFormHandler() {
   //            then save the recipes array back to localStorage
 
   // B10. TODO - Get a reference to the "Clear Local Storage" button
+  const clearLocalBtn = submitBtn.nextSibling;
+
   // B11. TODO - Add a click event listener to clear local storage button
   
   // Steps B12 & B13 will occur inside the event listener from step B11
