@@ -5,4 +5,4 @@
 ### - **Justin Lau**  
 
 
-Link to gitHub Page: [link](https://tristonbabers.github.io/Lab6_Starter/)
+## Link to gitHub Page: [link](https://tristonbabers.github.io/Lab6_Starter/)
